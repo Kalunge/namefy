@@ -5,6 +5,7 @@
 
 > A fun project that  on A [RESTful API for namefy](https://agify.io/). Estimates your age based on your first name.
 The app mocks a backend using JSON server, it searches for s username in the database to return the age and creates one if it does not exists. 
+![Screenshot from 2022-10-31 12-45-32](https://user-images.githubusercontent.com/50773868/198979814-a00edd16-1fbf-4934-a36f-3571b53a04c3.png)
 
 
 ## Built With
@@ -78,6 +79,6 @@ Give a :star: if you like this project!
 ## Acknowledgments
 
 - Much appreciation to the the EntireMoring staff and student community
-- Api Provided by [abibliadigital](https://github.com/marciovsena/abibliadigital/blob/master/DOCUMENTATION.md)
+- Api Provided by [namefy](https://github.com/marciovsena/abibliadigital/blob/master/DOCUMENTATION.md)
 
 
