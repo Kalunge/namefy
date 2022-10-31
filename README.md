@@ -27,6 +27,14 @@ To get the content of this project locally you need to run this command in your 
 - git clone ```git@github.com:Kalunge/namefy.git``` 
 - `cd namefy`
 - `npm install`
+  -This command will download all the dependancies of the project
+
+- Add json server to create a backend for the application
+  > `npx npm install -g json-server`
+
+- Start JSON Server
+  > `json-server --watch db.json`
+
 - run the index.htm file in your browser, beware of using live server if you have autosave in your vscode as it triggers unwanted refresh. 
 
 ## Test
@@ -35,14 +43,7 @@ For tracking linter errors locally you need to follow these steps:
 
 - After cloning the project you need to run this command
 
-  > `npm install`
-  > This command will download all the dependancies of the project
 
-- Add json server to create a backend for the application
-> `npx npm install -g json-server`
-
-- Start JSON Server
-  > `json-server --watch db.json`
 
 - For tracking the linter errors in HTML file run:
   > `npx hint .`

@@ -6,10 +6,11 @@ document.addEventListener("DOMContentLoaded", (event) => {
     const firstName = document.querySelector("#firstname");
     const userName = document.querySelector(".card-title");
     const userAge = document.querySelector(".card-text");
+    // const recreate = document.querySelector(".retry");
 
-    if(!firstName.value) {
-      alert("Must enter a first name")
-      return
+    if (!firstName.value) {
+      alert("Must enter a first name");
+      return;
     }
 
     const names = await getAgeEstiame();
@@ -27,6 +28,13 @@ document.addEventListener("DOMContentLoaded", (event) => {
       userAge.innerHTML = `your Age estimate is ${nameOfInterest.age} Years`;
     }
   });
+
+  // recreate.addEventListener("click", async (e) => {
+  //   await retry(firstName.value);
+  //   userName.innerHTML = `Hey ${firstName.value}`;
+  //   const age = await getUserAge(firstName.value);
+  //   userAge.innerHTML = `your Age estimate is ${age} Years`;
+  // });
 });
 
 const getAgeEstiame = async () => {
@@ -79,3 +87,7 @@ const getUserAge = async (name) => {
 
   return ItemFromDatabase.age;
 };
+
+// const retry = async (name) => {
+//   await createAgeEstimate(name + ".");
+// };
